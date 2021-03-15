@@ -1,0 +1,26 @@
+{
+  "packages": {
+    "dir": "",
+    "menu": [
+      "introduction",
+      [
+        "Theme",
+        [
+          "typography",
+          "colors",
+          "border",
+          "opacity",
+          "shadows",
+          "spacing",
+          "z-index"
+        ]
+      ],
+      [
+        "infrastructure",
+        [
+          "tailwind"
+        ]
+      ]
+    ]
+  }
+}
