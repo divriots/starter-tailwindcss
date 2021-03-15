@@ -1,4 +1,14 @@
 {
- "name": "@divriots/starter-tailwindcss",
- "version": "0.0.0"
+	"name": "@divriots/starter-tailwindcss",
+	"version": "0.0.0",
+	"description": "",
+	"license": "ISC",
+	"type": "module",
+	"homepage": "{{ homepage }}",
+	"scripts": {
+		"serve": "dsd-cli serve U3bRwsh0qncQBY27uPGi --open"
+	},
+	"devDependencies": {
+		"dsd-cli": "latest"
+	}
 }
