@@ -18,7 +18,8 @@
       [
         "infrastructure",
         [
-          "tailwind"
+          "tailwind",
+          "mdx-layout"
         ]
       ]
     ]
