@@ -3,14 +3,6 @@ export const typography = {
     fontFamily: {
       code: ['Consolas', 'SFMono-Regular', 'Monaco', 'monospace'],
     },
-    fontSize: {
-      caption: [
-        '0.9rem',
-        {
-          lineHeight: '1rem',
-        },
-      ],
-    },
     fontWeight: {
       custom: '600',
     },

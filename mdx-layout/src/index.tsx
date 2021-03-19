@@ -2,7 +2,6 @@ import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import { CoreLayout } from '@divriots/dockit-react/mdx-layout-core/dist/CoreLayout';
 import { setup } from '~/tailwind';
-import './styles.css';
 
 // Setup tailwind
 setup();
