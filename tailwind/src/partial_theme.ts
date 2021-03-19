@@ -8,7 +8,7 @@ import { shadows } from '~/shadows';
 import { spacing } from '~/spacing';
 import { zIndex } from '~/z-index';
 
-export const partialTheme = merge.all([
+const partialTheme = merge.all([
   typography,
   colors,
   border,
@@ -17,3 +17,5 @@ export const partialTheme = merge.all([
   spacing,
   zIndex,
 ]);
+
+export { partialTheme };

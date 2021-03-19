@@ -9,7 +9,6 @@
 		"serve": "dsd-cli serve U3bRwsh0qncQBY27uPGi --open"
 	},
 	"devDependencies": {
-		"dsd-cli": "latest",
-		"prettier": "2.2.1"
+		"dsd-cli": "latest"
 	}
 }
