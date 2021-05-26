@@ -4,6 +4,13 @@
     "menu": [
       "introduction",
       [
+        "components",
+        [
+          "menu",
+          "listbox"
+        ]
+      ],
+      [
         "Theme",
         [
           "typography",
