@@ -9,7 +9,9 @@
           "menu",
           "listbox",
           "switch",
-          "disclosure"
+          "disclosure",
+          "popover",
+          "radio-group"
         ]
       ],
       [

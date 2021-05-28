@@ -35,7 +35,7 @@ export const Listbox = ({ items = [], onSelected = () => { } }: ListboxProps) =>
             <span className="block truncate">{selected.name}</span>
             <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
               <SelectorIcon
-                className="w-5 h-5 text-gray-400"
+                className="w-5 h-5 text-grey-400"
                 aria-hidden="true"
               />
             </span>
@@ -49,30 +49,26 @@ export const Listbox = ({ items = [], onSelected = () => { } }: ListboxProps) =>
             <HListbox.Options className="absolute w-full py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
               {items.map((item) => (
                 <HListbox.Option
-                  key={item}
+                  key={item.name}
                   className={({ active }) =>
-                    `${active ? 'text-amber-900 bg-amber-100' : 'text-gray-900'}
+                    `${active ? 'text-amber-900 bg-amber-100' : 'text-grey-900'}
                           cursor-default select-none relative py-2 pl-10 pr-4`
                   }
                   value={item}
                 >
-                  {({ selected, active }) => (
+                  {({ selected }) => (
                     <>
                       <span
-                        className={`${selected ? 'font-medium' : 'font-normal'
-                          } block truncate`}
-                      >
+                        className={`${selected ? 'font-medium' : 'font-normal'} block truncate`} >
                         {item.name}
                       </span>
-                      {selected ? (
+                      {selected && (
                         <span
-                          className={`${active ? 'text-amber-600' : 'text-amber-600'
-                            }
-                                absolute inset-y-0 left-0 flex items-center pl-3`}
+                          className={'text-amber-600 absolute inset-y-0 left-0 flex items-center pl-1'}
                         >
                           <CheckIcon className="w-5 h-5" aria-hidden="true" />
                         </span>
-                      ) : null}
+                      )}
                     </>
                   )}
                 </HListbox.Option>

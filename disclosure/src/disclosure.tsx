@@ -34,7 +34,7 @@ export const Disclosure = ({ title, details }: DisclosureProps) => (
                 } w-5 h-5 text-navy`}
             />
           </HDisclosure.Button>
-          <HDisclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+          <HDisclosure.Panel className="px-4 pt-4 pb-2 text-sm text-grey-500">
             {details}
           </HDisclosure.Panel>
         </>
