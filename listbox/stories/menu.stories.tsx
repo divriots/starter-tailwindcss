@@ -17,4 +17,5 @@ export const listbox = () => <Listbox
     { name: 'Tanya Fox' },
     { name: 'Hellen Schmidt' },
   ]}
+  onSelected={({ name }) => window.alert(`You selected ${name}`)}
 />

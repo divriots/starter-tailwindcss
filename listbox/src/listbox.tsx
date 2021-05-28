@@ -1,23 +1,35 @@
 import React, { Fragment, useState } from 'react';
 import { Listbox as HListbox, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
+import { setup } from '~/tailwind';
+
+setup();
+
+export type ListboxItem = { name: string };
 
 export type ListboxProps = {
   /**
   The items as { name: string } objects to populate the list box.
   */
-  items?: { name: string }[]
+  items?: ListboxItem[],
+  /**
+  The handled for the 'selected' event.
+  */
+  onSelected?: (item: ListboxItem) => void;
 };
 
 /**
  Listboxes are a great foundation for building custom, accessible select menus for your app, complete with robust support for keyboard navigation.
  */
-export const Listbox = ({ items = [] }: ListboxProps) => {
+export const Listbox = ({ items = [], onSelected = () => { } }: ListboxProps) => {
   const [selected, setSelected] = useState(items[0]);
 
   return (
     <div className="w-72">
-      <HListbox value={selected} onChange={setSelected}>
+      <HListbox value={selected} onChange={(name: string) => {
+        setSelected(name);
+        onSelected({ name });
+      }}>
         <div className="relative mt-1">
           <HListbox.Button className="relative w-full py-2 pl-3 pr-10 text-left bg-white rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 focus-visible:border-indigo-500 sm:text-sm">
             <span className="block truncate">{selected.name}</span>
