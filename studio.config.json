@@ -4,6 +4,17 @@
     "menu": [
       "introduction",
       [
+        "components",
+        [
+          "menu",
+          "listbox",
+          "switch",
+          "disclosure",
+          "popover",
+          "radio-group"
+        ]
+      ],
+      [
         "Theme",
         [
           "typography",
