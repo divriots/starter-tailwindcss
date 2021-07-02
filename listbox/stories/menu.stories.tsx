@@ -1,21 +1,23 @@
 import React from 'react';
 import { Listbox } from '../index';
-
+import '~/tailwind/src/styles.css';
 
 export default {
   parameters: {
-    layout: 'centered'
-  }
+    layout: 'centered',
+  },
 };
 
-export const listbox = () => <Listbox
-  items={[
-    { name: 'Wade Cooper' },
-    { name: 'Arlene McCoy' },
-    { name: 'Devon Webb' },
-    { name: 'Tom Cook' },
-    { name: 'Tanya Fox' },
-    { name: 'Hellen Schmidt' },
-  ]}
-  onSelected={({ name }) => console.log('You selected', name)}
-/>
+export const listbox = () => (
+  <Listbox
+    items={[
+      { name: 'Wade Cooper' },
+      { name: 'Arlene McCoy' },
+      { name: 'Devon Webb' },
+      { name: 'Tom Cook' },
+      { name: 'Tanya Fox' },
+      { name: 'Hellen Schmidt' },
+    ]}
+    onSelected={({ name }) => console.log('You selected', name)}
+  />
+);

@@ -1,9 +1,6 @@
-import React, { Fragment, ReactNode } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-import { Popover as HPopover, Transition } from '@headlessui/react'
-import { setup } from '~/tailwind';
-
-setup();
+import React, { Fragment, ReactNode } from 'react';
+import { ChevronDownIcon } from '@heroicons/react/solid';
+import { Popover as HPopover, Transition } from '@headlessui/react';
 
 export type PopoverProps = {
   /**
@@ -27,11 +24,11 @@ export type PopoverProps = {
      */
     href: string;
     /**
-     * 
+     *
      */
     icon?: ReactNode;
-  }[]
-}
+  }[];
+};
 
 /**
 Popovers are perfect for floating panels with arbitrary content like navigation menus, mobile menus and flyout menus.
@@ -64,8 +61,10 @@ export const Popover = ({ title, items = [] }: PopoverProps) => (
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <HPopover.Panel className="absolute z-10 w-screen max-w-sm px-4 mt-3 transform
-                                       -translate-x-1/2 left-1/2 sm:px-0 lg:max-w-3xl">
+            <HPopover.Panel
+              className="absolute z-10 w-screen max-w-sm px-4 mt-3 transform
+                                       -translate-x-1/2 left-1/2 sm:px-0 lg:max-w-3xl"
+            >
               <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
                   {items.map((item) => (
@@ -76,7 +75,10 @@ export const Popover = ({ title, items = [] }: PopoverProps) => (
                     >
                       {!!item.icon && (
                         <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white sm:h-12 sm:w-12">
-                          <item.icon aria-hidden="true" className="text-orange-300" />
+                          <item.icon
+                            aria-hidden="true"
+                            className="text-orange-300"
+                          />
                         </div>
                       )}
                       <div className="ml-4">
