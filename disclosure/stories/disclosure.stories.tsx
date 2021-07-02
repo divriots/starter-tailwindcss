@@ -1,11 +1,11 @@
 import React from 'react';
 import { Disclosure } from '../index';
-
+import '~/tailwind/src/styles.css';
 
 export default {
   parameters: {
-    layout: 'centered'
-  }
+    layout: 'centered',
+  },
 };
 
 export const disclosure = () => (

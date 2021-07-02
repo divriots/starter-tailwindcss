@@ -1,9 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import { Listbox as HListbox, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
-import { setup } from '~/tailwind';
-
-setup();
 
 export type ListboxItem = { name: string };
 
@@ -11,7 +8,7 @@ export type ListboxProps = {
   /**
   The items as { name: string } objects to populate the list box.
   */
-  items?: ListboxItem[],
+  items?: ListboxItem[];
   /**
   The handled for the 'selected' event.
   */
@@ -21,15 +18,21 @@ export type ListboxProps = {
 /**
  Listboxes are a great foundation for building custom, accessible select menus for your app, complete with robust support for keyboard navigation.
  */
-export const Listbox = ({ items = [], onSelected = () => { } }: ListboxProps) => {
+export const Listbox = ({
+  items = [],
+  onSelected = () => {},
+}: ListboxProps) => {
   const [selected, setSelected] = useState(items[0]);
 
   return (
     <div className="w-72">
-      <HListbox value={selected} onChange={(name: string) => {
-        setSelected(name);
-        onSelected({ name });
-      }}>
+      <HListbox
+        value={selected}
+        onChange={(name: string) => {
+          setSelected(name);
+          onSelected({ name });
+        }}
+      >
         <div className="relative mt-1">
           <HListbox.Button className="relative w-full py-2 pl-3 pr-10 text-left bg-white rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 focus-visible:border-indigo-500 sm:text-sm">
             <span className="block truncate">{selected.name}</span>
@@ -59,12 +62,17 @@ export const Listbox = ({ items = [], onSelected = () => { } }: ListboxProps) =>
                   {({ selected }) => (
                     <>
                       <span
-                        className={`${selected ? 'font-medium' : 'font-normal'} block truncate`} >
+                        className={`${
+                          selected ? 'font-medium' : 'font-normal'
+                        } block truncate`}
+                      >
                         {item.name}
                       </span>
                       {selected && (
                         <span
-                          className={'text-amber-600 absolute inset-y-0 left-0 flex items-center pl-1'}
+                          className={
+                            'text-amber-600 absolute inset-y-0 left-0 flex items-center pl-1'
+                          }
                         >
                           <CheckIcon className="w-5 h-5" aria-hidden="true" />
                         </span>
@@ -78,5 +86,5 @@ export const Listbox = ({ items = [], onSelected = () => { } }: ListboxProps) =>
         </div>
       </HListbox>
     </div>
-  )
-}
+  );
+};
