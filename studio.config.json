@@ -2,7 +2,20 @@
   "packages": {
     "dir": "",
     "menu": [
-      "introduction",
+      "readme",
+      [
+        "tokens",
+        [
+          "typography",
+          "colors",
+          "border",
+          "opacity",
+          "shadows",
+          "spacing",
+          "z-index",
+          "all"
+        ]
+      ],
       [
         "components",
         [
@@ -15,21 +28,8 @@
         ]
       ],
       [
-        "Theme",
+        "dockit",
         [
-          "typography",
-          "colors",
-          "border",
-          "opacity",
-          "shadows",
-          "spacing",
-          "z-index"
-        ]
-      ],
-      [
-        "infrastructure",
-        [
-          "tailwind",
           "mdx-layout"
         ]
       ]

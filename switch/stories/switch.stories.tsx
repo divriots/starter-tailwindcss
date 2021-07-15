@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 import { Switch } from '../index';
-import '~/tailwind/src/styles.css';
+import '~/all/src/styles.css';
 
 export default {
   parameters: {

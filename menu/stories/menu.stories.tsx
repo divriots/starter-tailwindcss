@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Menu } from '../index';
 import {
   PencilIcon,
@@ -7,7 +7,7 @@ import {
   TrashIcon,
   ArchiveIcon,
 } from '@heroicons/react/solid';
-import '~/tailwind/src/styles.css';
+import '~/all/src/styles.css';
 
 export default {
   parameters: {

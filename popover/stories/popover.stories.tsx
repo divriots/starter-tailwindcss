@@ -1,11 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import { Popover } from '../index';
 import {
   LightBulbIcon,
   TerminalIcon,
   DocumentReportIcon,
 } from '@heroicons/react/solid';
-import '~/tailwind/src/styles.css';
+import '~/all/src/styles.css';
 
 export default {
   parameters: {

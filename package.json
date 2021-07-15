@@ -9,6 +9,13 @@
 		"serve": "dsd-cli serve U3bRwsh0qncQBY27uPGi --open"
 	},
 	"devDependencies": {
+		"@types/react": "^17.0.14",
 		"dsd-cli": "latest"
+	},
+	"dependencies": {
+		"@headlessui/react": "^1.3.0",
+		"@heroicons/react": "^1.0.2",
+		"deepmerge": "^4.2.2",
+		"react": "^17.0.2"
 	}
 }
