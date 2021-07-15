@@ -1,4 +1,5 @@
-import React, { Fragment, ReactNode } from 'react';
+import * as React from 'react';
+import { Fragment, ReactNode } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { Popover as HPopover, Transition } from '@headlessui/react';
 

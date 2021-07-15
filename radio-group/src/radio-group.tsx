@@ -1,4 +1,5 @@
-import React, { useState, ReactNode } from 'react';
+import * as React from 'react';
+import { useState, ReactNode } from 'react';
 import { CheckCircleIcon } from '@heroicons/react/solid';
 import { RadioGroup as HRadioGroup } from '@headlessui/react';
 
@@ -35,7 +36,7 @@ They're perfect for building out custom UIs for selectors.
 export const RadioGroup = ({
   label,
   items = [],
-  onSelected = () => {},
+  onSelected = () => { },
 }: RadioGroupProps) => {
   const [selected, setSelected] = useState(items[0]);
 
@@ -56,15 +57,13 @@ export const RadioGroup = ({
                 key={item.name}
                 value={item}
                 className={({ active, checked }) =>
-                  `${
-                    active
-                      ? 'ring-2 ring-offset-2 ring-offset-light-blue-300 ring-white ring-opacity-60'
-                      : ''
+                  `${active
+                    ? 'ring-2 ring-offset-2 ring-offset-light-blue-300 ring-white ring-opacity-60'
+                    : ''
                   }
-                  ${
-                    checked
-                      ? 'bg-light-blue-900 bg-opacity-75 text-white'
-                      : 'bg-white'
+                  ${checked
+                    ? 'bg-light-blue-900 bg-opacity-75 text-white'
+                    : 'bg-white'
                   }
                     relative rounded-lg shadow-md px-5 py-4 cursor-pointer flex focus:outline-none`
                 }
@@ -75,17 +74,15 @@ export const RadioGroup = ({
                       <div className="text-sm">
                         <HRadioGroup.Label
                           as="p"
-                          className={`font-medium  ${
-                            checked ? 'text-white' : 'text-grey-900'
-                          }`}
+                          className={`font-medium  ${checked ? 'text-white' : 'text-grey-900'
+                            }`}
                         >
                           {item.name}
                         </HRadioGroup.Label>
                         <HRadioGroup.Description
                           as="span"
-                          className={`inline ${
-                            checked ? 'text-light-blue-100' : 'text-grey-500'
-                          }`}
+                          className={`inline ${checked ? 'text-light-blue-100' : 'text-grey-500'
+                            }`}
                         >
                           <span>{item.description}</span>
                         </HRadioGroup.Description>

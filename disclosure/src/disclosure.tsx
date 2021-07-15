@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Disclosure as HDisclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/solid';
 
@@ -29,9 +29,8 @@ export const Disclosure = ({ title, details }: DisclosureProps) => (
           >
             <span>{title}</span>
             <ChevronUpIcon
-              className={`${
-                open ? 'transform rotate-180' : ''
-              } w-5 h-5 text-navy`}
+              className={`${open ? 'transform rotate-180' : ''
+                } w-5 h-5 text-navy`}
             />
           </HDisclosure.Button>
           <HDisclosure.Panel className="px-4 pt-4 pb-2 text-sm text-grey-500">

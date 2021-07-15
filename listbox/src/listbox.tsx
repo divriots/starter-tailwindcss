@@ -1,8 +1,9 @@
-import React, { Fragment, useState } from 'react';
+import * as React from 'react';
+import { Fragment, useState } from 'react';
 import { Listbox as HListbox, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 
-export type ListboxItem = { name: string };
+export type ListboxItem = { name: string; };
 
 export type ListboxProps = {
   /**
@@ -20,7 +21,7 @@ export type ListboxProps = {
  */
 export const Listbox = ({
   items = [],
-  onSelected = () => {},
+  onSelected = () => { },
 }: ListboxProps) => {
   const [selected, setSelected] = useState(items[0]);
 
@@ -28,9 +29,9 @@ export const Listbox = ({
     <div className="w-72">
       <HListbox
         value={selected}
-        onChange={(name: string) => {
+        onChange={(name) => {
           setSelected(name);
-          onSelected({ name });
+          onSelected(name);
         }}
       >
         <div className="relative mt-1">
@@ -62,9 +63,8 @@ export const Listbox = ({
                   {({ selected }) => (
                     <>
                       <span
-                        className={`${
-                          selected ? 'font-medium' : 'font-normal'
-                        } block truncate`}
+                        className={`${selected ? 'font-medium' : 'font-normal'
+                          } block truncate`}
                       >
                         {item.name}
                       </span>
