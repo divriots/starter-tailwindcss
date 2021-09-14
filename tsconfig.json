@@ -10,7 +10,8 @@
     "moduleResolution": "Node",
     "baseUrl": ".",
     "paths": {
-      "~/*": ["*"]
+      "~/*": ["*"],
+      "@divriots/tailwindcss/*": ["*"]
     }
   }
 }

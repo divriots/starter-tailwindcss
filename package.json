@@ -1,21 +1,23 @@
 {
-	"name": "@divriots/starter-tailwindcss",
-	"version": "0.0.0",
-	"description": "",
-	"license": "ISC",
-	"type": "module",
-	"homepage": "{{ homepage }}",
-	"scripts": {
-		"serve": "dsd-cli serve U3bRwsh0qncQBY27uPGi --open"
-	},
-	"devDependencies": {
-		"@types/react": "^17.0.14",
-		"dsd-cli": "latest"
-	},
-	"dependencies": {
-		"@headlessui/react": "^1.3.0",
-		"@heroicons/react": "^1.0.2",
-		"deepmerge": "^4.2.2",
-		"react": "^17.0.2"
-	}
+  "name": "@divriots/starter-tailwindcss",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "npx backlight@latest serve U3bRwsh0qncQBY27uPGi --open"
+  },
+  "devDependencies": {
+    "@divriots/dockit-react": "^0.0.66",
+    "@mdx-js/react": "^1.6.22",
+    "@types/react": "^17.0.14"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.3.0",
+    "@heroicons/react": "^1.0.2",
+    "@tailwindcss/typography": "^0.4.1",
+    "deepmerge": "^4.2.2",
+    "react": "^17.0.2"
+  }
 }
