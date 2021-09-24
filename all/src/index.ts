@@ -1,4 +1,4 @@
-import * as merge from 'deepmerge';
+import merge from 'deepmerge';
 
 import { typography } from '~/typography';
 import { colors } from '~/colors';
