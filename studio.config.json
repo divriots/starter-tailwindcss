@@ -2,7 +2,7 @@
   "packages": {
     "dir": "",
     "menu": [
-      "readme",
+      "introduction",
       [
         "tokens",
         [
@@ -13,7 +13,7 @@
           "shadows",
           "spacing",
           "z-index",
-          "all"
+          "theme"
         ]
       ],
       [
