@@ -1,3 +1,3 @@
 import { theme } from '../src/index';
 
-export const complete_theme = () => theme;
+export const tailwind_config = () => theme;

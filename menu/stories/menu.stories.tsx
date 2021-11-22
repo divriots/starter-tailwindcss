@@ -7,7 +7,6 @@ import {
   TrashIcon,
   ArchiveIcon,
 } from '@heroicons/react/solid';
-import '~/all/src/styles.css';
 
 export default {
   parameters: {

@@ -13,7 +13,7 @@ export type SwitchProps = {
  Switches are a pleasant interface for toggling a value between two states,
  and offer the same semantics and keyboard navigation as native checkbox elements.
 */
-export const Switch = ({ onSwitched = () => { } }: SwitchProps) => {
+export const Switch = ({ onSwitched = () => {} }: SwitchProps) => {
   const [enabled, setEnabled] = useState(false);
 
   return (
@@ -24,7 +24,7 @@ export const Switch = ({ onSwitched = () => { } }: SwitchProps) => {
           setEnabled(isEnabled);
           onSwitched(isEnabled);
         }}
-        className={`${enabled ? 'bg-teal-900' : 'bg-teal-700'}
+        className={`${enabled ? 'bg-teal-500' : 'bg-gray-700'}
           relative inline-flex flex-shrink-0 h-11 w-20 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
       >
         <span
