@@ -1,10 +1,6 @@
 import * as React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import { CoreLayout } from '@divriots/dockit-react/mdx-layout-core/dist/CoreLayout';
-import { theme } from '~/theme';
-import { setup } from 'twind/shim';
-
-setup({ theme });
 
 export const DefaultLayout = (props) => (
   <MDXProvider components={{}}>
