@@ -62,24 +62,14 @@ export const Dialog = ({
         {openLabel}
       </button>
 
-      <Transition appear show={isOpen} as={Fragment}>
+      <Transition show={isOpen} as={Fragment}>
         <HDialog
           as="div"
-          className="fixed inset-0 z-10 overflow-y-auto"
+          className="fixed inset-0 z-top overflow-y-auto"
           onClose={closeModal}
         >
           <div className="min-h-screen px-4 text-center">
-            <Transition.Child
-              as={Fragment}
-              enter="ease-out duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="ease-in duration-200"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <HDialog.Overlay className="fixed inset-0" />
-            </Transition.Child>
+            <HDialog.Overlay className="fixed inset-0 bg-light-blue-900 opacity-see-through" />
 
             {/* This element is to trick the browser into centering the modal contents. */}
             <span
