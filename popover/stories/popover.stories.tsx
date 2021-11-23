@@ -16,29 +16,33 @@ export const popover = () => (
   <Popover
     title="Solutions"
     items={[
-      {
-        name: 'Insights',
-        description: 'Measure actions your users take',
-        href: '##',
-        icon: LightBulbIcon,
-      },
-      {
-        name: 'Automations',
-        description: 'Create your own targeted content',
-        href: '##',
-        icon: TerminalIcon,
-      },
-      {
-        name: 'Reports',
-        description: 'Keep track of your growth',
-        href: '##',
-        icon: DocumentReportIcon,
-      },
-      {
-        name: 'Documentation',
-        description: 'Start integrating products and tools',
-        href: '##',
-      },
+      [
+        {
+          name: 'Insights',
+          description: 'Measure actions your users take',
+          href: '##',
+          icon: LightBulbIcon,
+        },
+        {
+          name: 'Automations',
+          description: 'Create your own targeted content',
+          href: '##',
+          icon: TerminalIcon,
+        },
+        {
+          name: 'Reports',
+          description: 'Keep track of your growth',
+          href: '##',
+          icon: DocumentReportIcon,
+        },
+      ],
+      [
+        {
+          name: 'Documentation',
+          description: 'Start integrating products and tools',
+          href: '##',
+        },
+      ],
     ]}
   />
 );

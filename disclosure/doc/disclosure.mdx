@@ -23,13 +23,21 @@ import { Disclosure } from '@divriots/starter-tailwindcss/disclosure';
 ## Example
 
 <Playground
-  className="not-prose"
+  className="not-prose bg-demo-disclosure headlessui"
   scope={{ Disclosure }}
   code={`
-<Disclosure
-  title="What is your refund policy?"
-  details="If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked."
-/>
+<div className="py-16 w-full max-w-md mx-auto">
+  <div class="px-2 py-[1px] bg-white rounded-2xl">
+    <Disclosure
+      title="What is your refund policy?"
+      details="If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked."
+    />
+    <Disclosure as="div" className="mt-2"
+      title="Do you offer technical support?"
+      details="No."
+    />
+  </div>
+</div>
   `}
 />
 

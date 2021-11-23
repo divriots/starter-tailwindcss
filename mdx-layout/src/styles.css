@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose pre {
+  @apply font-code !text-sm;
+}
+
+.headlessui {
+  @apply rounded-md;
+}
+
+.headlessui > div:first-child {
+  @apply rounded-t-md border-none;
+}
+
+.headlessui > div:last-child {
+  @apply rounded-b-md border-none;
+  @apply text-sm;
+}

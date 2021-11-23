@@ -23,8 +23,10 @@
           "listbox",
           "switch",
           "disclosure",
+          "dialog",
           "popover",
-          "radio-group"
+          "radio-group",
+          "tabs"
         ]
       ],
       [

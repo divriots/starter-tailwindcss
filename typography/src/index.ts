@@ -1,6 +1,6 @@
 export const typography = {
   fontFamily: {
-    code: ['Consolas', 'SFMono-Regular', 'Monaco', 'monospace'],
+    code: ['Menlo', 'ui-monospace', 'SFMono-Regular', 'Monaco', 'monospace'],
   },
   fontWeight: {
     custom: '600',

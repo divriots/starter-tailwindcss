@@ -20,10 +20,12 @@ import { Switch } from '@divriots/starter-tailwindcss/switch';
 ## Example
 
 <Playground
-  className="not-prose"
+  className="not-prose bg-demo-switch headlessui"
   scope={{ Switch }}
   code={`
-<Switch onSwitched={(enabled) => console.log('Switched to', enabled)} />
+<div className="py-16 w-max mx-auto">
+  <Switch onSwitched={(enabled) => console.log('Switched to', enabled)} />
+</div>
   `}
 />
 
