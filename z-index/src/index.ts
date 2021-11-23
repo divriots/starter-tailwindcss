@@ -1,7 +1,5 @@
 export const zIndex = {
-  extend: {
-    zIndex: {
-      top: '100',
-    },
+  zIndex: {
+    top: '100',
   },
 };

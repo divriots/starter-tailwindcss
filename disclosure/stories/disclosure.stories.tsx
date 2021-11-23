@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Disclosure } from '../index';
-import '~/all/src/styles.css';
 
 export default {
   parameters: {

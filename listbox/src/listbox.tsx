@@ -3,7 +3,7 @@ import { Fragment, useState } from 'react';
 import { Listbox as HListbox, Transition } from '@headlessui/react';
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 
-export type ListboxItem = { name: string; };
+export type ListboxItem = { name: string };
 
 export type ListboxProps = {
   /**
@@ -21,7 +21,7 @@ export type ListboxProps = {
  */
 export const Listbox = ({
   items = [],
-  onSelected = () => { },
+  onSelected = () => {},
 }: ListboxProps) => {
   const [selected, setSelected] = useState(items[0]);
 
@@ -63,8 +63,9 @@ export const Listbox = ({
                   {({ selected }) => (
                     <>
                       <span
-                        className={`${selected ? 'font-medium' : 'font-normal'
-                          } block truncate`}
+                        className={`${
+                          selected ? 'font-medium' : 'font-normal'
+                        } block truncate`}
                       >
                         {item.name}
                       </span>

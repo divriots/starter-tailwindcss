@@ -1,10 +1,8 @@
 export const border = {
-  extend: {
-    borderRadius: {
-      custom: '2rem',
-    },
-    borderWidth: {
-      large: '1rem',
-    },
+  borderRadius: {
+    custom: '2rem',
+  },
+  borderWidth: {
+    large: '1rem',
   },
 };
