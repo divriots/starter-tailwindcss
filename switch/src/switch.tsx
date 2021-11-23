@@ -13,7 +13,7 @@ export type SwitchProps = {
  Switches are a pleasant interface for toggling a value between two states,
  and offer the same semantics and keyboard navigation as native checkbox elements.
 */
-export const Switch = ({ onSwitched = () => { } }: SwitchProps) => {
+export const Switch = ({ onSwitched = () => {} }: SwitchProps) => {
   const [enabled, setEnabled] = useState(false);
 
   return (
