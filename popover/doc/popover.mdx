@@ -22,42 +22,6 @@ import { Popover } from '@divriots/starter-tailwindcss/popover';
 <Popover
   title="Solutions"
   items={[
-    {
-      name: 'Insights',
-      description: 'Measure actions your users take',
-      href: '##',
-      icon: LightBulbIcon,
-    },
-    {
-      name: 'Automations',
-      description: 'Create your own targeted content',
-      href: '##',
-      icon: TerminalIcon,
-    },
-    {
-      name: 'Reports',
-      description: 'Keep track of your growth',
-      href: '##',
-      icon: DocumentReportIcon,
-    },
-    {
-      name: 'Documentation',
-      description: 'Start integrating products and tools',
-      href: '##',
-    },
-  ]}
-/>;
-```
-
-## Example
-
-<Playground
-  className="not-prose"
-  scope={{ Popover, LightBulbIcon, TerminalIcon, DocumentReportIcon }}
-  code={`
-<Popover
-  title="Solutions"
-  items={
     [
       {
         name: 'Insights',
@@ -77,14 +41,59 @@ import { Popover } from '@divriots/starter-tailwindcss/popover';
         href: '##',
         icon: DocumentReportIcon,
       },
+    ],
+    [
       {
         name: 'Documentation',
         description: 'Start integrating products and tools',
         href: '##',
       },
-    ]
-  }
-/>
+    ],
+  ]}
+/>;
+```
+
+## Example
+
+<Playground
+  className="not-prose bg-demo-popover headlessui"
+  scope={{ Popover, LightBulbIcon, TerminalIcon, DocumentReportIcon }}
+  code={`
+<div className="py-16 w-max mx-auto">
+  <Popover
+    title="Solutions"
+    items={
+      [
+        [
+          {
+            name: 'Insights',
+            description: 'Measure actions your users take',
+            href: '##',
+            icon: LightBulbIcon,
+          },
+          {
+            name: 'Automations',
+            description: 'Create your own targeted content',
+            href: '##',
+            icon: TerminalIcon,
+          },
+          {
+            name: 'Reports',
+            description: 'Keep track of your growth',
+            href: '##',
+            icon: DocumentReportIcon,
+          },
+        ], [
+          {
+            name: 'Documentation',
+            description: 'Start integrating products and tools',
+            href: '##',
+          },
+        ]
+      ]
+    }
+  />
+</div>
   `}
 />
 

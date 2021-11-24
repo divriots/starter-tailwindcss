@@ -16,17 +16,22 @@ export default {
 
 export const menu = () => (
   <Menu
+    label="Options"
     items={[
-      {
-        Icon: PencilIcon,
-        label: 'Edit',
-        onClick: () => window.alert('Edit was pressed!'),
-      },
-      { Icon: DuplicateIcon, label: 'Duplicate' },
-      { Icon: ArchiveIcon, label: 'Archive' },
-      { Icon: ExternalLinkIcon, label: 'Move' },
-      { Icon: TrashIcon, label: 'Delete' },
-      { label: 'Exit' },
+      [
+        {
+          Icon: PencilIcon,
+          label: 'Edit',
+          onClick: () => window.alert('Edit was pressed!'),
+        },
+        { Icon: DuplicateIcon, label: 'Duplicate' },
+      ],
+      [
+        { Icon: ArchiveIcon, label: 'Archive' },
+        { Icon: ExternalLinkIcon, label: 'Move' },
+      ],
+      [{ Icon: TrashIcon, label: 'Delete' }],
+      [{ label: 'Exit' }],
     ]}
   />
 );

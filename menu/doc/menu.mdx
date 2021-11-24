@@ -4,6 +4,7 @@ import { Playground } from '@divriots/dockit-react/playground';
 import { PencilIcon, DuplicateIcon } from '@heroicons/react/solid';
 import { DefaultLayout } from '~/mdx-layout';
 export default DefaultLayout;
+
 import { Menu } from '~/menu';
 
 # Menu
@@ -32,19 +33,23 @@ import { PencilIcon, DuplicateIcon } from '@heroicons/react/solid';
 ## Example
 
 <Playground
-  className="not-prose"
+  className="not-prose bg-demo-menu headlessui"
   scope={{ Menu, PencilIcon, DuplicateIcon }}
   code={`
-<div className="h-40">
+<div className="py-16 pb-40 w-max mx-auto">
   <Menu
+    label='Options'
     items={[
-      {
-        Icon: PencilIcon,
-        label: 'Edit',
-        onClick: () => window.alert('Edit was pressed!'),
-      },
-      { Icon: DuplicateIcon, label: 'Duplicate' },
-      { label: 'Exit' },
+      [
+        {
+          Icon: PencilIcon,
+          label: 'Edit',
+          onClick: () => window.alert('Edit was pressed!'),
+        },
+        { Icon: DuplicateIcon, label: 'Duplicate' }
+      ], [
+        { label: 'Exit' }
+      ]
     ]}
   />
 </div>
