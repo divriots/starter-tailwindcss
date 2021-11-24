@@ -3,6 +3,7 @@ import { MDXProvider } from '@mdx-js/react';
 import { CoreLayout } from '@divriots/dockit-react/mdx-layout-core/dist/CoreLayout';
 import { Switch } from '~/switch';
 import { SunIcon, MoonIcon } from '@heroicons/react/solid';
+import '@divriots/dockit-react/style.css';
 import './styles.css';
 
 function switchMode() {
